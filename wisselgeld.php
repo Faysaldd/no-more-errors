@@ -1,14 +1,16 @@
 <?php
 
+define('geen_wisselgeld_melding', 'geen wisselgeld');
+
 if ($argc == 1) { 
-    echo "geen wisselgeld"; 
+    echo geen_wisselgeld_melding; 
     exit; 
 }
 
-$geldgeef = intval($argv[1]);
+$geldgeef = readline();
 
 if ($geldgeef <= 0) { 
-    echo "geen wisselgeld"; 
+    echo geen_wisselgeld_melding; 
     exit; 
 }
 
