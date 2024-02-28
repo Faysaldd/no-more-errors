@@ -7,7 +7,7 @@ if ($argc == 1) {
     exit; 
 }
 
-$geldgeef = readline();
+$geldgeef = intval($argv[1]);
 
 if ($geldgeef <= 0) { 
     echo geen_wisselgeld_melding; 
