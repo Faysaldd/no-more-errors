@@ -1,17 +1,16 @@
 <?php
 
-define('EENHEDEN', [5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5]); 
+define('EENHEDEN', [5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5]);
 
-if ($argc == 1) { 
-    echo "geen wisselgeld"; 
+if ($argc == 1) {
+    echo "geen wisselgeld";
     exit;
 }
 
-$geldgeef = round(floatval($argv[1]) * 20) * 5; 
+$geldgeef = round(floatval($argv[1]) * 20) * 5;
 
-
-if ($geldgeef <= 0) { 
-    echo "geen wisselgeld"; 
+if ($geldgeef <= 0) {
+    echo "geen wisselgeld";
     exit;
 }
 
